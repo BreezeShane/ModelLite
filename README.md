@@ -128,12 +128,6 @@ matplotlib==3.7.1
 - [ ] Introduce the framework like AutoML.
 - [ ] Make more quantization presets.
 - [ ] Check cached processing results in load_dataset.
-        ```python
-        def load_dataset(cfg: DatasetContextConfig):
-            cache_dir = Path(cfg.root_dir) / "cached"
-            if cache_dir.exists():
-                pass
-        ```
 - [ ] Implement dataloader parallel.
 - [ ] Check model status in each process.
 - [ ] Beautify terminal outputs.
@@ -153,6 +147,7 @@ MobileNet
 ├── Dataset
 ├── debug.py
 ├── enumeration.py
+├── environment.yml
 ├── export
 │   ├── decorator.py
 │   ├── engine.py
@@ -180,6 +175,7 @@ MobileNet
 │       │   └── adam.yaml
 │       └── scheduler
 │           └── cosine.yaml
+├── LICENSE
 ├── logs
 ├── main.py
 ├── model
@@ -193,6 +189,7 @@ MobileNet
 │   ├── quantize_functions.py
 │   └── quantize.py
 ├── README.md
+├── requirements_dev.txt
 ├── requirements.txt
 ├── saved_models
 └── schemas
@@ -203,5 +200,5 @@ MobileNet
     ├── presets.py
     └── validation.py
 
-21 directories, 40 files
+21 directories, 43 files
 ```
