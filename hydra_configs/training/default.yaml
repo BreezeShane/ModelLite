@@ -1,0 +1,8 @@
+defaults:
+  - _self_
+  - optimizer: adam
+  - scheduler: cosine
+
+num_epochs: 20
+checkpoint_dir: ./checkpoints
+log_dir: ./logs

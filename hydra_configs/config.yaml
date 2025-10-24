@@ -1,0 +1,19 @@
+defaults:
+  - _self_
+  - run: default
+  - data: cifar10
+  - model: mobilenet
+  - training: default
+  - quantization: fx_graph
+  - export: common
+  - evaluation: default
+
+globals:
+  seed: 42
+  device: "auto" # "cpu" or "cuda" or "gpu" or "auto"
+  model_dir: ""
+  save_dir: "./saved_models/"
+
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}

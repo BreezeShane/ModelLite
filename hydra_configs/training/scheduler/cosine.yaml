@@ -1,0 +1,6 @@
+name: CosineAnnealingLR
+# LambdaLR, MultiplicativeLR, StepLR, MultiStepLR, ConstantLR, LinearLR, ExponentialLR, SequentialLR, CosineAnnealingLR, ChainedScheduler, ReduceLROnPlateau, CyclicLR, CosineAnnealingWarmRestarts, OneCycleLR, PolynomialLR, LRScheduler,
+required_params:
+    T_max: 100
+optional_params:
+    eta_min: 1e-6

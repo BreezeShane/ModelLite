@@ -1,0 +1,21 @@
+name: "onnx"
+file_name: "mobilenetv3_exported.onnx"
+
+opset_version: 16
+do_constant_folding: true
+export_params: true
+training: false
+
+dynamic_axes:
+  input:
+    0: "batch_size"
+  output:
+    0: "batch_size"
+
+operator_export_type: "ONNX"  # ONNX, RAW, ONNX_ATEN
+custom_opsets: {}
+export_modules_as_functions: false
+
+metadata:
+  producer_name: "torch.onnx"
+  producer_version: "1.0"

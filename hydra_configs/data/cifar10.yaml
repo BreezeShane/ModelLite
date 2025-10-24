@@ -1,0 +1,10 @@
+name: "CIFAR10"
+num_classes: 10
+root_dir: "./Dataset"
+subset_ratio: 1
+batch_size: 64
+transform:
+  resize: 224
+  normalize:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]

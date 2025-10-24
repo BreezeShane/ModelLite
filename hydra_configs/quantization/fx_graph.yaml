@@ -1,0 +1,11 @@
+strategy: "fx_graph"
+backend: "fbgemm"
+calibration_samples: 200
+dtype: "qint8"
+# presets:
+#   high_compression:
+#     activation_observer: "MovingAverageMinMaxObserver"
+#     weight_observer: "default_per_channel_weight_observer"
+#   high_accuracy:
+#     activation_observer: "HistogramObserver"
+#     weight_observer: "MinMaxObserver"

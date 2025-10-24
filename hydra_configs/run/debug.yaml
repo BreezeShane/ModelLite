@@ -1,0 +1,11 @@
+debug: True
+verbose: False
+quantization_cpu_only: True
+relative:
+  device: "cpu" # "cpu" or "cuda" or "gpu" or "auto"
+  num_epochs: 1
+  batch_size: 64
+  subset_ratio: 0.1
+  calibration_samples: 20
+  num_runs: 3
+  num_batches: 10
